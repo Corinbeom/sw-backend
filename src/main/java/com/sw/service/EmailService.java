@@ -44,6 +44,7 @@ public class EmailService {
         message.setText("회원가입 인증번호 입니다: " + verificationCode);
         mailSender.send(message);
 
+        System.out.println("인증번호 : "+verificationCode);
         return verificationCode;
     }
 
